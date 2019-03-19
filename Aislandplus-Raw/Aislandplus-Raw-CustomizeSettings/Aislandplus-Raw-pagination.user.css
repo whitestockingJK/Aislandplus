@@ -1,0 +1,103 @@
+/*
+/*[[pagination]]*/-调整页码位置
+>页面最下方
+>加入右侧工具栏
+*/
+
+/*页面最下方*/
+.uk-pagination {
+  background: var(--main-color05);
+  border-radius: 200px;
+  padding: 5px 0px;
+  margin: 40px auto 0px;
+  max-width: 800px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  column-span: all;
+}
+
+.uk-pagination>li>a, .uk-pagination>li>span {
+  margin: auto 4px;
+}
+
+
+/*加入右侧工具栏*/
+.uk-pagination {
+  transition: .5s ease 0s;
+  background-color: var(--main-color01) !important;
+  border-radius: 200px;
+  padding: 5px 20px;
+  position: fixed;
+  right: 5%;
+  left: 5%;
+  top: 5000px;
+  margin: auto;
+  z-index: 99;
+  opacity: .9 !important;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 600px;
+  max-height: 60%;
+}
+
+.uk-pagination::after {
+  transition: 0s;
+  background: var(--main-color01);
+  box-shadow: 0px 0px 15px rgba(20, 20, 20, .1), 0px 0px 20px rgba(20, 20, 20, .1);
+  position: fixed;
+  right: 10px;
+  display: inline-block;
+  font-size: 16px;
+  color: var(--main-color00);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-family: FontAwesome;
+  content: "\f053";
+}
+
+.uk-pagination:hover {
+  transition: .5s ease 0s;
+  width: 80%;
+  box-shadow: 30px 0px 200px rgba(0, 0, 0, .2);
+  opacity: 1 !important;
+  top: auto;
+  overflow: hidden;
+  bottom: 40px;
+}
+
+.uk-pagination:hover:after {
+  transition: 0s;
+  box-shadow: 0px 0px 0px rgba(0, 0, 20, 0);
+  position: fixed;
+  left: -2px;
+  top: -2px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -99999;
+}
+
+.uk-pagination:active:after {
+  transition: 0s;
+  box-shadow: 0px 0px 0px rgba(0, 0, 20, 0);
+  position: fixed;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+.uk-pagination:active:after, .uk-pagination::after {
+  bottom: 25px !important;
+}

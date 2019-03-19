@@ -1,0 +1,296 @@
+/*
+/*[[menu]]*/ -调整左侧菜单
+>隐藏左侧菜单
+>显示左侧菜单
+*/
+
+
+/*隐藏左侧菜单*/
+/********************左侧菜单主样式********************/
+#h-menu {
+  transition: left .3s ease, box-shadow .3s ease;
+  border-right-color: var(--main-color14) !important;
+  position: fixed;
+  overflow: auto !important;
+  text-overflow: clip;
+  width: 300px;
+  height: 100% !important;
+  left: -300px;
+  background: var(--main-color04);
+  border-style: none;
+  z-index: 9999997;
+}
+
+#h-menu:hover {
+  transition: left .3s ease, box-shadow .3s ease;
+  left: 0px;
+  box-shadow: 5px 0px 50px rgba(0, 0, 0, .28);
+  overflow: scroll;
+}
+
+#h-menu::after {
+  background: var(--main-color000);
+  border-radius: 24px;
+  border: 1px solid var(--main-color000);
+  position: fixed;
+  left: 8px;
+  top: 6px;
+  display: inline-block;
+  font-size: 26px;
+  color: var(--primary-color10);
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' /*[[nightmodeonicon]]*/ width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E") !important;
+  width: 48px;
+  height: 48px;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  opacity: .6;
+}
+
+#h-menu:hover:after {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -99999;
+  content: ' ' !important;
+}
+
+#h-menu:active:after {
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  opacity: 0;
+}
+
+/********************左侧菜单头部********************/
+#h-menu-top {
+  height: 64px;
+}
+
+#h-menu-top-img {
+  float: left;
+  width: 48px;
+  position: absolute;
+  top: 2px;
+  left: 48px;
+}
+
+#h-menu-top-img img {
+  transition: opacity .3s ease, box-shadow .3s ease;
+  border-radius: 24px;
+  opacity: .5;
+}
+
+#h-menu-top-img img:hover {
+  transition: opacity .3s ease, box-shadow .3s ease;
+  opacity: 1;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, .2);
+}
+
+#h-menu-top-sitename:after {
+  font-size: 16px !important;
+  content: "+\A";
+}
+
+#h-menu-top-sitename {
+  float: left;
+  width: 150px;
+  position: absolute;
+  top: 22px;
+  left: 96px;
+}
+
+/********************左侧菜单内容样式********************/
+.h-nav-header, .h-nav-parent-header {
+  border-top: 1px solid var(--main-color12) !important;
+}
+
+
+/*显示左侧菜单*/
+@media screen and (min-width: 800px) {
+
+  /********************左侧菜单主样式********************/
+  .uk-breadcrumb::before {
+    box-shadow: none !important;
+  }
+
+  .vsc-initialized::before {
+    pointer-events: none;
+    content: ' ';
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: var(--main-color000);
+    box-shadow: 0px 0px 10px rgba(0, 74, 66, .4);
+    width: 100%;
+    height: 64px;
+    z-index: 9999998;
+  }
+
+  #h-menu {
+    border-right-color: var(--main-color14) !important;
+    overflow: hidden !important;
+    text-overflow: clip;
+    top: 64px;
+    width: 220px;
+    height: calc(100% - 64px) !important;
+    background: var(--main-color04);
+    /*侧边背景颜色*/
+    border-style: none;
+    z-index: 9999997;
+  }
+
+  #h-menu:hover {
+    overflow: auto !important;
+  }
+
+  #h-content {
+    padding: calc(var(--content-padding00) * 1px) 2% 5% calc(2% + 220px);
+  }
+
+  .h-threads-list {
+    column-gap: 20px;
+  }
+
+  /********************左侧菜单头部********************/
+  #h-menu-top {
+    height: 0px !important;
+  }
+
+  #h-menu-top-img {
+    float: left;
+    width: 40px;
+    position: fixed;
+    top: 6px;
+    left: 20px;
+  }
+
+  #h-menu-top-img img {
+    transition: opacity .3s ease, box-shadow .3s ease;
+    border-radius: 24px;
+    opacity: .5;
+  }
+
+  #h-menu-top-sitename {
+    visibility: hidden !important;
+  }
+
+  #h-menu-top-img img:hover {
+    transition: opacity .3s ease, box-shadow .3s ease;
+    opacity: 1;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .2);
+  }
+
+  /********************左侧菜单内容样式********************/
+  .h-nav-header, .h-nav-parent-header {
+    border-bottom: 1px solid var(--main-color11) !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  /********************左侧菜单主样式********************/
+  #h-menu {
+    transition: left .3s ease, box-shadow .3s ease;
+    border-right-color: var(--main-color14) !important;
+    position: fixed;
+    overflow: auto !important;
+    text-overflow: clip;
+    width: 300px;
+    height: 100% !important;
+    left: -300px;
+    background: var(--main-color04);
+    border-style: none;
+    z-index: 9999997;
+  }
+
+  #h-menu:hover {
+    transition: left .3s ease, box-shadow .3s ease;
+    left: 0px;
+    box-shadow: 5px 0px 50px rgba(0, 0, 0, .28);
+    overflow: scroll;
+  }
+
+  #h-menu::after {
+    background: var(--main-color000);
+    border-radius: 24px;
+    border: 1px solid var(--main-color000);
+    position: fixed;
+    left: 8px;
+    top: 6px;
+    display: inline-block;
+    font-size: 26px;
+    color: var(--primary-color10);
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' /*[[nightmodeonicon]]*/ width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E") !important;
+    width: 48px;
+    height: 48px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    opacity: .6;
+  }
+
+  #h-menu:hover:after {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -99999;
+    content: ' ' !important;
+  }
+
+  #h-menu:active:after {
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    opacity: 0;
+  }
+
+  /********************左侧菜单头部********************/
+  #h-menu-top {
+    height: 64px;
+  }
+
+  #h-menu-top-img {
+    float: left;
+    width: 48px;
+    position: absolute;
+    top: 2px;
+    left: 48px;
+  }
+
+  #h-menu-top-img img {
+    transition: opacity .3s ease, box-shadow .3s ease;
+    border-radius: 24px;
+    opacity: .5;
+  }
+
+  #h-menu-top-img img:hover {
+    transition: opacity .3s ease, box-shadow .3s ease;
+    opacity: 1;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .2);
+  }
+
+  #h-menu-top-sitename:after {
+    font-size: 16px !important;
+    content: "+\A";
+  }
+
+  #h-menu-top-sitename {
+    float: left;
+    width: 150px;
+    position: absolute;
+    top: 22px;
+    left: 96px;
+  }
+
+  /********************左侧菜单内容样式********************/
+  .h-nav-header, .h-nav-parent-header {
+    border-top: 1px solid var(--main-color12) !important;
+  }
+}

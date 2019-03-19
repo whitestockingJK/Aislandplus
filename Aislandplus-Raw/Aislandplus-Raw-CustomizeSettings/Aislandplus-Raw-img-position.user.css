@@ -1,0 +1,36 @@
+/*
+/*[[img-position]]*/-调整缩略图图位置至标题栏下方
+>开启
+>关闭
+*/
+
+/*开启*/
+.h-threads-item-reply-main, .h-threads-item.uk-clearfix {
+  position: relative;
+}
+
+.h-threads-info {
+  position: absolute;
+  top: 0;
+}
+
+.h-threads-content {
+  padding: 36px 0px 0px 0px;
+}
+
+.h-threads-img-a img, .h-threads-img img {
+  position: relative !important;
+  top: 36px !important;
+}
+
+:root {
+  --content-padding00:
+    90;
+}
+
+
+/*关闭*/
+:root {
+  --content-padding00:
+    90;
+}

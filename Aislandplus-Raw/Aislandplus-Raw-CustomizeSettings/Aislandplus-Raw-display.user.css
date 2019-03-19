@@ -1,0 +1,27 @@
+/*
+/*[[display]]*/ -置顶串显示设置
+>正常显示置顶串
+>去掉主岛置顶串
+>去掉备胎置顶串
+>去掉主岛&备胎置顶串
+*/
+
+/*正常显示置顶串*/
+
+
+/*去掉主岛置顶串*/
+.h-threads-item.uk-clearfix[data-threads-id="14500641"] {
+    display:none!important;
+}
+
+
+/*去掉备胎置顶串*/
+.h-threads-item.uk-clearfix[data-threads-id="1502999"] {
+    display:none!important;
+}
+
+
+/*去掉主岛&备胎置顶串*/
+.h-threads-item.uk-clearfix[data-threads-id="14500641"] , .h-threads-item.uk-clearfix[data-threads-id="1502999"]{
+    display:none!important;
+}

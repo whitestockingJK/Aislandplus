@@ -1,0 +1,333 @@
+/*
+/*[[nightmode]]*/-夜间模式&主题配色
+>关闭
+>开启
+>配色更黑的夜间模式
+>透明配色（浅色）
+>透明配色(深色）
+*/
+
+/*关闭*/
+:root {
+  --main-color00: #000;
+  --main-color01: #fff;
+  --main-color02: #fefefe;
+  --main-color03: #fafafa;
+  --main-color04: #f5f5f5;
+  --main-color05: #f1f1f1;
+  --main-color06: #ebebeb;
+  --main-color07: #e8e8e8;
+  --main-color08: #e6e6e6;
+  --main-color09: #e5e5e5;
+  --main-color10: #eee;
+  --main-color11: #ddd;
+  --main-color12: #dcdcdc;
+  --main-color13: #d3d3d3;
+  --main-color14: #ccc;
+  --main-color15: #c8c8c8;
+  --main-color16: #bbb;
+  --main-color17: #636363;
+  --main-color000: #0000;
+  --primary-color00: #5ebcb3;
+  --primary-color01: #4db6ac;
+  --primary-color02: #009688;
+  --primary-color03: #00675b;
+  --primary-color04: #ffb300;
+  --primary-color05: #6d4c41;
+  --primary-color06: #d85030;
+  --primary-color07: #bb1d1d;
+  --primary-color08: #6e6e6e;
+  --primary-color09: #888888;
+  --primary-color10: #676767;
+  --primary-color11: #111;
+  --primary-color12: #6c6c6c;
+  --primary-color13: #767676;
+  --primary-color14: #a1a1a1;
+  --primary-color15: #e0f2f1;
+  --primary-color16: #666666;
+  --primary-color17: #158c7830;
+  --primary-color18: #2896835c;
+  --primary-color19: #158c782e;
+  --primary-color20: #28968336;
+}
+
+
+/*开启*/
+:root {
+  --main-color00: #fff;
+  --main-color01: #303030;
+  --main-color02: #272727;
+  --main-color03: #1e1e1e;
+  --main-color04: #141414;
+  --main-color05: #1a1a1a;
+  --main-color06: #292929;
+  --main-color07: #121212;
+  --main-color08: #333;
+  --main-color09: #333;
+  --main-color10: #3d3d3d;
+  --main-color11: #424242;
+  --main-color12: #474747;
+  --main-color13: #575757;
+  --main-color14: #666;
+  --main-color15: #707070;
+  --main-color16: #8a8a8a;
+  --main-color17: #9c9c9c;
+  --main-color000: #0000;
+  --primary-color00: #5ebcb3;
+  --primary-color01: #4db6ac;
+  --primary-color02: #009688;
+  --primary-color03: #00675b;
+  --primary-color04: #ffb300;
+  --primary-color05: #6d4c41;
+  --primary-color06: #d85030;
+  --primary-color07: #bb1d1d;
+  --primary-color08: #c9c9c9;
+  --primary-color09: #c4c4c4;
+  --primary-color10: #ccc;
+  --primary-color11: #f5f5f5;
+  --primary-color12: #c9c9c9;
+  --primary-color13: #c4c4c4;
+  --primary-color14: #a1a1a1;
+  --primary-color15: #e0f2f1;
+  --primary-color16: #666666;
+  --primary-color17: #0000002e;
+  --primary-color18: #00000059;
+  --primary-color19: #0000001a;
+  --primary-color20: #00000042;
+  --s-color00: white;
+}
+
+
+/*配色更黑的夜间模式*/
+:root {
+  --main-color00: #fff;
+  --main-color01: #000;
+  --main-color02: #050505;
+  --main-color03: #0a0a0a;
+  --main-color04: #141414;
+  --main-color05: #1a1a1a;
+  --main-color06: #292929;
+  --main-color07: #2e2e2e;
+  --main-color08: #333;
+  --main-color09: #333;
+  --main-color10: #3d3d3d;
+  --main-color11: #424242;
+  --main-color12: #474747;
+  --main-color13: #575757;
+  --main-color14: #666;
+  --main-color15: #707070;
+  --main-color16: #8a8a8a;
+  --main-color17: #9c9c9c;
+  --main-color000: #0000;
+  --primary-color00: #5ebcb3;
+  --primary-color01: #4db6ac;
+  --primary-color02: #009688;
+  --primary-color03: #00675b;
+  --primary-color04: #ffb300;
+  --primary-color05: #6d4c41;
+  --primary-color06: #d85030;
+  --primary-color07: #bb1d1d;
+  --primary-color08: #c9c9c9;
+  --primary-color09: #c4c4c4;
+  --primary-color10: #ccc;
+  --primary-color11: #f5f5f5;
+  --primary-color12: #c9c9c9;
+  --primary-color13: #c4c4c4;
+  --primary-color14: #a1a1a1;
+  --primary-color15: #e0f2f1;
+  --primary-color16: #666666;
+  --primary-color17: #0000002e;
+  --primary-color18: #00000059;
+  --primary-color19: #0000001a;
+  --primary-color20: #00000042;
+  --s-color00: white;
+}
+
+
+/*透明配色（浅色）*/
+:root {
+  --main-color00: #000;
+  --main-color01: #ffffffeb;
+  --main-color02: #fefefede;
+  --main-color03: #ffffffc9;
+  --main-color04: #f5f5f57a;
+  --main-color05: #0000000a;
+  --main-color06: #d8d8d866;
+  --main-color07: #4545451c;
+  --main-color08: #e6e6e6;
+  --main-color09: #e5e5e5;
+  --main-color10: #eee;
+  --main-color11: #ddd;
+  --main-color12: #ffffff78;
+  --main-color13: #0000;
+  --main-color14: #ccc;
+  --main-color15: #c8c8c8;
+  --main-color16: #bbb;
+  --main-color17: #636363;
+  --main-color000: #0000;
+  --primary-color00: #5ebcb3;
+  --primary-color01: #4db6ac;
+  --primary-color02: #009688;
+  --primary-color03: #00675b;
+  --primary-color04: #ffb300;
+  --primary-color05: #6d4c41;
+  --primary-color06: #d85030;
+  --primary-color07: #bb1d1d;
+  --primary-color08: #6e6e6e;
+  --primary-color09: #888888;
+  --primary-color10: #676767;
+  --primary-color11: #111;
+  --primary-color12: #6c6c6c;
+  --primary-color13: #767676;
+  --primary-color14: #a1a1a1;
+  --primary-color15: #e0f2f1;
+  --primary-color16: #666666;
+  --primary-color17: #158c7830;
+  --primary-color18: #2896835c;
+  --primary-color19: #158c782e;
+  --primary-color20: #28968336;
+}
+
+#h-menu-top {
+  background: #f1f1f1;
+}
+
+.uk-nav-side {
+  background: var(--main-color04) !important;
+}
+
+spam[style*="color:gray"] {
+  background: #fff !important;
+}
+
+.uk-breadcrumb {
+  background: #0000 !important;
+}
+
+.uk-breadcrumb:before {
+  backdrop-filter: blur(30px);
+  box-shadow: none !important;
+}
+
+.uk-nav-side {
+  backdrop-filter: blur(30px) !important;
+}
+
+.uk-pagination {
+  backdrop-filter: blur(30px);
+  box-shadow: none !important;
+  overflow: hidden;
+  background: #ffffffa1 !important;
+}
+
+.uk-pagination::after, .uk-pagination:hover, .uk-pagination:hover:after, .uk-pagination:active:after {
+  box-shadow: none !important;
+}
+
+#h-footer p, #h-footer {
+  backdrop-filter: blur(30px);
+  background: #ffffffa1 !important;
+  color: var(--main-color00);
+  padding: 20px;
+  margin: 0px;
+}
+
+#h-post-form form, .h-forum-header {
+  backdrop-filter: blur(30px);
+  box-shadow: none !important;
+}
+
+
+/*透明配色(深色）*/
+:root {
+  --main-color00: #fff;
+  --main-color01: #1d1d1de8;
+  --main-color02: #272727e8;
+  --main-color03: #151515e0;
+  --main-color04: #25252578;
+  --main-color05: #1a1a1ae3;
+  --main-color06: #292929e6;
+  --main-color07: #cbcbcb1c;
+  --main-color08: #333;
+  --main-color09: #333;
+  --main-color10: #3d3d3d;
+  --main-color11: #424242;
+  --main-color12: #47474778;
+  --main-color13: #57575700;
+  --main-color14: #666;
+  --main-color15: #707070;
+  --main-color16: #8a8a8a;
+  --main-color17: #9c9c9c;
+  --main-color000: #0000;
+  --primary-color00: #5ebcb3;
+  --primary-color01: #4db6ac;
+  --primary-color02: #009688;
+  --primary-color03: #00675b;
+  --primary-color04: #ffb300;
+  --primary-color05: #6d4c41;
+  --primary-color06: #d85030;
+  --primary-color07: #bb1d1d;
+  --primary-color08: #c9c9c9;
+  --primary-color09: #c4c4c4;
+  --primary-color10: #ccc;
+  --primary-color11: #f5f5f5;
+  --primary-color12: #c9c9c9;
+  --primary-color13: #c4c4c4;
+  --primary-color14: #a1a1a1;
+  --primary-color15: #e0f2f1;
+  --primary-color16: #666666;
+  --primary-color17: #0000002e;
+  --primary-color18: #00000059;
+  --primary-color19: #0000001a;
+  --primary-color20: #00000042;
+  --s-color00: white;
+}
+
+#h-menu-top {
+  background: #1a1a1a;
+}
+
+.uk-nav-side {
+  background: var(--main-color04) !important;
+}
+
+spam[style*="color:gray"] {
+  background: #0000 !important;
+}
+
+.uk-breadcrumb {
+  background: #0000 !important;
+}
+
+.uk-breadcrumb:before {
+  backdrop-filter: blur(30px);
+  box-shadow: none !important;
+}
+
+.uk-nav-side {
+  backdrop-filter: blur(30px) !important;
+}
+
+.uk-pagination {
+  backdrop-filter: blur(30px);
+  box-shadow: none !important;
+  overflow: hidden;
+  background: #000000a1 !important;
+}
+
+.uk-pagination::after, .uk-pagination:hover, .uk-pagination:hover:after, .uk-pagination:active:after {
+  box-shadow: none !important;
+}
+
+#h-footer p, #h-footer {
+  backdrop-filter: blur(30px);
+  background: #000000a1 !important;
+  color: var(--main-color00);
+  padding: 20px;
+  margin: 0px;
+}
+
+#h-post-form form, .h-forum-header {
+  backdrop-filter: blur(30px);
+  box-shadow: none !important;
+}

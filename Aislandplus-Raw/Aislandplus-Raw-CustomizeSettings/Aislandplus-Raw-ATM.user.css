@@ -1,0 +1,19 @@
+/*
+/*[[ATM]]*/-用户ID改为ATM/全部变成ATM
+>关闭
+>开启
+*/
+
+/*关闭*/
+
+
+/*开启*/
+.h-threads-info-uid {
+  font-size: 0px !important;
+}
+
+.h-threads-info-uid:after {
+  content: "ID:ATM";
+  font-size: 10px !important;
+  color: red;
+}

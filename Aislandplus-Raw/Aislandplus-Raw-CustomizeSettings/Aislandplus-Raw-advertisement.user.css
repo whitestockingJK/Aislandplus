@@ -1,0 +1,48 @@
+/*
+/*[[advertisement]]*/-去广告
+>正常显示广告
+>充值0元独享尊贵右下角悬浮广告
+>充值98逸去广告图片
+*/
+
+/*正常显示广告*/
+
+
+/*充值0元独享尊贵右下角悬浮广告*/
+.h-threads-item-reply[data-threads-id="9999999"] {
+  position: fixed;
+  width: 400px !important;
+  right: 60px;
+  bottom: 50px;
+  border: 2px solid #f00;
+  z-index: 1;
+}
+
+@keyframes mymove {
+  0% {
+    background: #ff0
+  }
+
+  50% {
+    background: #f00
+  }
+}
+
+.h-threads-item-reply[data-threads-id="9999999"] img {
+  max-width: 400px !important;
+  max-height: 200px !important;
+}
+
+.h-threads-item-reply[data-threads-id="9999999"]>.h-threads-item-reply-icon {
+  display: none !important;
+}
+
+.h-threads-item-reply[data-threads-id="9999999"]>.h-threads-item-reply-main {
+  animation: mymove .1s infinite steps(1);
+}
+
+
+/*充值98逸去广告图片*/
+.h-threads-item-reply[data-threads-id="9999999"] img {
+  display: none;
+}

@@ -1,0 +1,180 @@
+/*
+/*[[animation]]*/-主页仿app样式
+>关闭
+>开启
+*/
+
+/*关闭*/
+.h-threads-info-id {
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.h-threads-item-reply-main>.h-threads-info {
+  border-bottom: none;
+}
+
+
+/*开启*/
+:root {
+  --animatio-time00: 4;
+}
+
+.h-threads-list {
+  -webkit-column-width: 320px;
+  -moz-column-width: 319px;
+  column-gap: 32px;
+}
+
+spam[style*="color:gray"] {
+  margin: 0px 0px 0px 20px;
+}
+
+.h-threads-item {
+  border-radius: 8px;
+  padding: 0px 0px 10px 0px;
+  margin: 0px auto 32px !important;
+}
+
+.h-threads-item:hover {
+  transition: .6s ease;
+  box-shadow: 0px 5px 20px var(--primary-color17), 0px 20px 70px var(--primary-color18);
+}
+
+.h-threads-item:active {
+  transition: .01s ease;
+  box-shadow: 0px 0px 10px var(--primary-color19), 0px 10px 50px var(--primary-color20);
+}
+
+.h-threads-info-id {
+  transition: .3s ease;
+  color: var(--main-color000) !important;
+}
+
+.h-threads-info {
+  border-bottom: none;
+}
+
+.h-threads-item-reply-main>.h-threads-img-box, .h-threads-item-reply>.h-threads-item-reply-main>.h-threads-info {
+  display: none !important;
+}
+
+.h-threads-item-replys, .h-threads-item-reply-main {
+  border: none;
+  pointer-events: none;
+  padding: 0px !important;
+  margin: 0px !important;
+  background: #0000 !important;
+  height: 30px !important;
+  overflow: hidden;
+}
+
+.h-threads-item-replys>.h-threads-item-reply {
+  position: relative !important;
+  height: 30px !important;
+  top: 10px !important;
+  background: #0000 !important;
+  animation: m2 calc(var(--animatio-time00) * 5s) infinite;
+}
+
+.h-threads-item-replys>.h-threads-item-reply:nth-child(1) .h-threads-content {
+  animation-delay: 0s;
+}
+
+.h-threads-item-replys>.h-threads-item-reply:nth-child(2) .h-threads-content {
+  animation-delay: calc(var(--animatio-time00) * 1s);
+}
+
+.h-threads-item-replys>.h-threads-item-reply:nth-child(3) .h-threads-content {
+  animation-delay: calc(var(--animatio-time00) * 2s);
+}
+
+.h-threads-item-replys>.h-threads-item-reply:nth-child(4) .h-threads-content {
+  animation-delay: calc(var(--animatio-time00) * 3s);
+}
+
+.h-threads-item-replys>.h-threads-item-reply:nth-child(5) .h-threads-content {
+  animation-delay: calc(var(--animatio-time00) * 4s);
+}
+
+@keyframes m1 {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes m2 {
+  0% {
+    top: 0px;
+  }
+
+  19% {
+    top: 0px;
+  }
+
+  20% {
+    top: -30px;
+  }
+
+  39% {
+    top: -30px;
+  }
+
+  40% {
+    top: -60px;
+  }
+
+  59% {
+    top: -60px;
+  }
+
+  60% {
+    top: -90px;
+  }
+
+  79% {
+    top: -90px;
+  }
+
+  80% {
+    top: -120px;
+  }
+
+  99% {
+    top: -120px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.h-threads-item-reply .h-threads-content {
+  top: 0;
+  margin: 0px;
+  padding: 0px 10px !important;
+  animation: m1 calc(var(--animatio-time00) * 5s) infinite;
+}
+
+.h-threads-item-reply .h-threads-content, .h-threads-item-reply .h-threads-content>font {
+  height: 30px !important;
+  line-height: 30px !important;
+  color: #bababa !important;
+  font-size: 14px !important
+}
