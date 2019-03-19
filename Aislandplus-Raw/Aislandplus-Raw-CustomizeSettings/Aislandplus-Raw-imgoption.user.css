@@ -1,0 +1,18 @@
+/*
+/*[[imgoption]]*/-调整图片查看方式
+*/
+
+/*小图查看*/
+.h-threads-img-a img {
+  margin: 10px 30px 10px 30px !important;
+  max-height: 200px !important;
+  max-width: calc(100% - 60px) !important;
+  width: auto;
+}
+
+/*大图查看(建议配合图片重定向至原图脚本使用)*/
+.h-threads-img-a img {
+  margin: auto !important;
+  max-width: 100% !important;
+  width: 100%;
+}

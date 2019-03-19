@@ -1,0 +1,12 @@
+/*
+/*[[brightness]]*/ -调整图片亮度
+*/
+
+/*不调整*/
+filter: brightness(100%);
+
+/*亮度80%*/
+filter: brightness(80%);
+
+/*亮度50%*/
+filter: brightness(50%);
